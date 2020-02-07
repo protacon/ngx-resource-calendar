@@ -1,6 +1,23 @@
 <h1>Resource calendar</h1>
 <button (click)="setDay()">1 day</button>
 <button (click)="setDays()">2 days</button>
-<button (click)="addEvents()">Add events</button>
-<pro-resource-calendar [dates]="dates" [events]="events">
-</pro-resource-calendar>
+<button (click)="showEvents()">Show events</button>
+<ptc-resource-calendar
+  [dates]="dates"
+  [events]="events"
+  [eventTemplate]="eventTemplate"
+  [slotTemplate]="slotTemplate"
+>
+</ptc-resource-calendar>
+
+<ng-template #eventTemplate let-event="event">
+  <div class="calendar-event">Event: {{ event.resourceNumber }}</div>
+</ng-template>
+
+<ng-template #slotTemplate let-slot="slot">
+  <div class="slot">
+    <div class="slot-time">
+      {{ slot.time | date: 'shortTime' }}
+    </div>
+  </div>
+</ng-template>

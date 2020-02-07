@@ -1,62 +1,70 @@
-  
-button.info-btn {
-    color: #fff !important;
-}
-  
-:host ::ng-deep pro-resource-calendar .header {
-    border-bottom: 1px solid gray;
-    background: #fff;
-    text-align: center;
-}
-  
-:host ::ng-deep pro-resource-calendar .header .day-row {
-    font-size: normal;
-    font-weight: 600;
-    color: #0158AF;
-    text-transform: capitalize;
-    padding-top: 10px;
-}
-    
-:host ::ng-deep pro-resource-calendar .header .resource {
-    font-size: small;
-    text-transform: uppercase;
-    padding: 10px;
-}
-  
-:host ::ng-deep pro-resource-calendar .hour-row {
-    text-align: right;
-    background: #fff;
+:host ::ng-deep ptc-resource-calendar .header {
+  border-bottom: 1px solid gray;
+  background: #fff;
+  text-align: center;
 }
 
-:host ::ng-deep pro-resource-calendar .hour-sub-slot {
-    padding: 0 10px;
-    font-size: small;
-    text-transform: uppercase;
-    color: grey;
+:host ::ng-deep ptc-resource-calendar .header .day-row {
+  font-size: normal;
+  font-weight: 600;
+  color: #0158af;
+  text-transform: capitalize;
+  padding-top: 10px;
 }
-    
-:host ::ng-deep pro-resource-calendar .hour-sub-slot:first-child {
-    font-weight: 800;
-    font-size: normal;
+
+:host ::ng-deep ptc-resource-calendar .header .resource {
+  font-size: small;
+  text-transform: uppercase;
+  padding: 10px;
 }
-  
-:host ::ng-deep pro-resource-calendar .day-row {
-    position: relative;
-    width: 90%;
-    border-left: 1px solid gray;
+
+:host ::ng-deep ptc-resource-calendar .hour-row {
+  text-align: right;
+  background: #fff;
 }
-    
-:host ::ng-deep pro-resource-calendar .hour-slot {
-    background: #fff;
-    border-bottom: 1px solid gray;    
+
+:host ::ng-deep ptc-resource-calendar .hour-sub-slot {
+  padding: 0 10px;
+  font-size: small;
+  text-transform: uppercase;
+  color: grey;
 }
-    
-:host ::ng-deep pro-resource-calendar .hour-sub-slot:not(:last-child) {
-    border-bottom: 1px dashed gray;
+
+:host ::ng-deep ptc-resource-calendar .hour-sub-slot:first-child {
+  font-weight: 800;
+  font-size: normal;
+}
+
+:host ::ng-deep ptc-resource-calendar .day-row {
+  position: relative;
+  width: 90%;
+  border-left: 1px solid gray;
+}
+
+:host ::ng-deep ptc-resource-calendar .hour-slot {
+  background: #fff;
+  border-bottom: 1px solid gray;
+}
+
+:host ::ng-deep ptc-resource-calendar .hour-sub-slot:not(:last-child) {
+  border-bottom: 1px dashed gray;
+  box-sizing: border-box;
+}
+
+.slot {
+  height: 80%;
+  width: 100%;
+  background-color: rgba(0, 128, 0, 0.07);
+}
+
+.slot-time {
+  text-align: center;
+  margin-top: 14px;
 }
 
 .calendar-event {
-    padding: 5px;
-    height: 100%;
+  padding: 5px;
+  height: 100%;
+  background-color: blue;
+  color: white;
 }
-  
